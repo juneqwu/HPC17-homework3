@@ -25,23 +25,15 @@ Average time across 4 processes: 0.851 seconds.
 Average time across 8 processes: 2.076 seconds.
 
 
-On Crunchy1 and Crunchy3
+On Crunchy1 and Crunchy3 with commend -perhost 1
 
 N = 100,000
-Average time across  8 processes: 1.008 seconds.
-Average time across 16 processes: 2.308 seconds.
-Average time across 30 processes: 4.407 seconds.
+Average time across 2 processes: 12.172 seconds.
+Average time across 4 processes: 23.855 seconds.
 
 N = 500,000
-Average time across  8 processes:  5.411 seconds.
-Average time across 16 processes: 10.618 seconds.
-Average time across 30 processes: 21.882 seconds.
-
-N = 500,000
-Average time across  8 processes: 10.886 seconds.
-Average time across 16 processes: 21.623 seconds.
-Average time across 30 processes: 45.259 seconds.
-
+Average time across 2 processes: 104.071 seconds.
+Average time across 4 processes: 295.498 seconds.
 
 ################################
 
@@ -58,7 +50,7 @@ The bandwith is estimated as 30 GB/s
 The Max Memory Bandwidwith of Intel Core i7-7700HQ Mobile is 34.1 GB/s
 
 
-On Crunchy1 and Crunchy3
+On Crunchy1 and Crunchy3 with commend -perhost 1
 Average time across 4 processes for 1 round of communication takes 0.035 seconds.
 2 MB * 1 * 4 / 0.035 s = 228.57 MB/s
 The bandwith is estimated as 228.57 MB/s
