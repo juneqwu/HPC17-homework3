@@ -43,7 +43,7 @@ Estimated latency: 1.5e-4
 Large Array (2MB):
 
 ################################
-Sending an array of double of length 2.5e+5
+Sending an array of double of length 31250
 
 On my single processor laptop:
 
