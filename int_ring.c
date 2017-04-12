@@ -32,6 +32,9 @@ int main( int argc, char *argv[])
   int message_in;
   tag = 99;
 
+  timestamp_type time1, time2;
+  get_timestamp(&time1);
+
   /*Send integer 0 to process 0*/
   if(rank == 0)
     {
@@ -41,9 +44,6 @@ int main( int argc, char *argv[])
       printf("rank %d hosted on %s starts with the message %d\n", rank, hostname, message_out);
     }
 
-  timestamp_type time1, time2;
-  get_timestamp(&time1);
-  
   for (i = 0; i<N; i++){
   /*Send message in loops*/
   if(rank == 0)
@@ -80,6 +80,6 @@ int main( int argc, char *argv[])
   get_timestamp(&time2);
   double elapsed = timestamp_diff_in_seconds(time1,time2);
   printf("Time elapsed for %d loops for rank %d is %f seconds.\n", N, rank, elapsed);
-  
+
   return 0;
 }
